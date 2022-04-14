@@ -1,0 +1,11 @@
+.main-grid
+	+content-roof-area("Главная/ Салоны")
+	.content-main-area
+		+content-head("Cалоны", "salon-detail")
+		.content-body.content-grid
+			.content-detail
+				include goods-detail/goods-main.pug
+				include goods-detail/goods-tabs.pug
+				
+	include ../content-parts/sidebar.pug
+	include ../content-parts/comment-detail-form.pug

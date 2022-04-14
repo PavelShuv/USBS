@@ -1,0 +1,47 @@
+.poster-main {
+  height: 100vh;
+  max-height: 800px;
+  background: #ccc;
+  position: relative;
+
+  .img-cover {
+    position: absolute;
+  }
+
+  .poster-container,
+  .poster-item,
+  .main-grid {
+    height: 100%;
+  }
+
+
+}
+
+
+
+.poster-item-body {
+  grid-column: 7/ span 5;
+  display: flex;
+}
+
+.poster-info {
+  margin: auto 0;
+  color: $whiteColor;
+  position: relative;
+
+  h2 {
+    @include changeFontSize($mediaLargeSize);
+    margin: 0 0 30px;
+    color: inherit;
+
+  }
+
+  .info-text {
+    @include changeFontSize($mediaMediumSize);
+    margin: 0 0 30px;
+  }
+
+  .btn-group {
+    text-align: right;
+  }
+}

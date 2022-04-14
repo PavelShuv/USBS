@@ -1,0 +1,87 @@
+//(PE-- W, H, L, T, LR, TB, Z, D, P)
+@mixin positionElement($w:100%, $h:auto, $LrPos:0, $TbPos:0, $LeftRight:left, $TopBottom:top, $z:auto, $display: block, $pos: absolute) {
+  width: $w;
+  height: $h;
+
+  @if $LeftRight==left {
+    left: $LrPos;
+  }
+
+  @else {
+    right: $LrPos;
+  }
+
+  @if $TopBottom==top {
+    top: $TbPos;
+  }
+
+  @else {
+    bottom: $TbPos;
+  }
+
+  position: $pos;
+  display: $display;
+  z-index: $z;
+}
+
+
+//url("../images/ico-hamburger-white.png", contain, center, no-repeat)
+@mixin bgImageEl($img:none, $s:contain, $p:center, $r:no-repeat) {
+  background-position: $p;
+  background-repeat: $r;
+  background-size: $s;
+  background-image: url($img);
+}
+
+
+@mixin icoEl($width, $height, $img:none, $va:middle, $s:contain, $p:center, $r:no-repeat) {
+  display: inline-block;
+  vertical-align: $va;
+  width: $width;
+  height: $height;
+  background-position: $p;
+  background-repeat: $r;
+  background-size: $s;
+  background-image: url($img);
+
+}
+
+
+$points: 1920,
+1680,
+1440,
+1280,
+1024,
+768,
+414;
+
+@mixin changeFontSize($mediaSize) {
+
+  @each $point in $points {
+    @media screen and (max-width: #{$point}px) {
+
+      font-size: map-get($mediaSize, $point);
+
+    }
+  }
+
+}
+
+@mixin response {
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
+
+$size: 414px;
+$block: comments-all;
+
+@include response {
+
+  /*---#{$block start}---*/
+  .box2 {
+    background: red;
+  }
+
+  /*---#{$block end}---*/
+}

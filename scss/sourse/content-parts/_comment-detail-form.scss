@@ -1,0 +1,68 @@
+.comment-detail-form {
+  padding: 15px 15px 30px;
+  background-color: $blackColor;
+  color: $whiteColor;
+  grid-column: span 12;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 15px;
+
+  h2 {
+    font-size: $largeSize;
+    color: inherit;
+    font-family: inherit;
+    line-height: 1;
+  }
+
+  .comment-data {
+    grid-column: span 2;
+    font-size: $standartSizePlusPlus;
+  }
+
+  .comment-detail-container {
+    grid-column: span 5;
+  }
+
+  .comment-form-img {
+    grid-column: span 2;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  textarea {
+    border-color: $whiteColor;
+    color: inherit;
+    margin: 0 0 30px;
+  }
+}
+
+.comment-form-grade {
+  color: $grayColor;
+  font-size: $standartSizePlusPlus;
+  padding: 15px 0;
+
+  b {
+    margin-right: 15px;
+  }
+
+
+}
+
+.comment-stars-container {
+  display: inline-block;
+
+
+  i {
+    @include icoEl(20px, 20px, "../images/icons/star-gray.svg");
+    margin: 0 2px;
+
+    cursor: pointer;
+
+    &:hover {
+      @include bgImageEl("../images/icons/star-green.svg");
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.goods-detail-main {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-column-gap: 15px;
+  padding-top: 15px;
+  border-top: 1px solid;
+}
+
+.goods-detail-img {
+  grid-column: span 3;
+
+  img {
+    max-height: 300px;
+  }
+}
+
+.goods-stock-container {
+  grid-column: span 3;
+
+  .goods-quantity,
+  .goods-delivery,
+  .goods-cheaper {
+    margin: 0 0 8px;
+  }
+
+  .goods-quantity {
+    font-family: "bold";
+    font-size: $standartSizePlus;
+    color: $greenColor;
+    position: relative;
+    padding-left: 15px;
+
+    &::before {
+      content: "";
+      @include positionElement(6px, 6px, 0, 8px);
+      border-radius: 100%;
+      background-color: $greenColor;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+}
+
+.goods-detail-price {
+  font-size: $largeSize;
+  color: $blackColor;
+  font-family: "bold";
+  margin: 0 0 15px;
+  line-height: 1;
+}
+
+.goods-detail-info {
+  grid-column: span 4;
+  max-width: 400px;
+
+  .info-line {
+    margin: 0 0 8px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "bold";
+
+  }
+
+  .goods-buy {
+    margin-top: 35px;
+  }
+}

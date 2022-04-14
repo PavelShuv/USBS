@@ -1,0 +1,15 @@
+mixin banner-cabinet(img, title, secondTitlem, text, btnText )
+  .cabinet-banner
+    .img-cover
+      img(src=img)
+    .main-grid
+      .cabinet-banner-head
+        h2
+          =title
+        h3 
+          =secondTitlem
+      .banner-text 
+        = text
+        .btn-container
+          a.btn(href="#")
+            = btnText

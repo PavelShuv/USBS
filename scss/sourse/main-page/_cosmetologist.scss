@@ -1,0 +1,23 @@
+.cosmetologist-item {
+  grid-column: span 2;
+
+  border-top: 1px solid;
+  padding-top: 15px;
+
+  h3 {
+    font-size: inherit;
+    margin: 0 0 15px;
+  }
+}
+
+.cosmetologist-item-description {
+  margin: 0 0 15px;
+}
+
+.cosmetologist-list-img {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+.goods-tab-link {
+  padding: 15px;
+  border-top: 2px solid $grayColorSecond;
+  background: $grayColorSecond;
+
+  font-family: "bold";
+  cursor: pointer;
+  display: inline-block;
+
+  &:hover,
+  &.active {
+    border-color: $greenColor;
+    color: $blackColor;
+  }
+}
+
+.goods-tab-header {
+  border-bottom: 1px solid;
+}
+
+.goods-tab-description {
+  font-size: $standartSizePlus;
+  color: $blackColor;
+}

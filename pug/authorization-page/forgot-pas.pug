@@ -1,0 +1,19 @@
+.content-grid.main-grid
+  +content-roof-area("Главная/ Восстановление пароля")
+  .content-main-area
+    +content-head("Восстановление пароля")
+  .content-body-area
+    .cabinet-head
+      h1 Восстановление пароля
+    .cabinet-body
+      .cabinet-line
+        .cabinet-num 01
+        .cabinet-fill
+          h3 
+            em Введите ваш Email
+            span *
+          .cabinet-filed
+            form.form.authorization-form
+              input(type="text" placeholder="| Введя email, вы получите письмо с ссылкой на восстановление пароля")
+              .btn-group
+                input.btn(type="submit" value="Отправить") 

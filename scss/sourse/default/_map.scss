@@ -1,0 +1,13 @@
+.map-container {
+  position: relative;
+  height: 400px;
+  background: $grayColor;
+}
+
+.contacts-address {
+  display: none;
+}
+
+#map {
+  @include positionElement(100%, 100%);
+}

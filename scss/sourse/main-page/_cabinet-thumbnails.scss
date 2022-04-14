@@ -1,0 +1,31 @@
+.cabinet-thumbnails {
+  padding-top: 45px;
+}
+
+
+.cabinet-thumbnails-item {
+  grid-column: span 4;
+  border-top: 1px solid;
+  padding-top: 15px;
+
+  h3 {
+    @include changeFontSize($mediaMediumSize);
+    margin: 0 0 15px;
+    position: relative;
+  }
+
+  i {
+    @include positionElement(20px, 20px, 0, 3px, right);
+    @include bgImageEl("../images/controls/arrow-next-gray.svg");
+  }
+
+  .cabinet-thumbnails-text {
+    margin-bottom: 15px;
+  }
+
+  .cabinet-thumbnails-img {
+    img {
+      width: 100%;
+    }
+  }
+}

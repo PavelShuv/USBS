@@ -1,0 +1,46 @@
+.mobile-menu.element-show(data-showEl="0")
+  .close
+  .header-mobile-menu
+  .controls-mobile-menu.logged-status
+    .login-mobile-menu.controls-cell
+      a(href="#") Войти
+    .reg-mobile-menu.controls-cell
+      a(href="#") Регистрация
+    .logged-mobile-menu.controls-cell
+      a(href="#") 
+        i.img-cover 
+          img(src="../images/temp/1.jpg", alt="")
+        em Медведев Евгений
+    .logout-mobile-menu.controls-cell
+      a(href="#") Регистрация
+  .city-mobile-menu
+    select.style-select(data-text="Ваш город:")
+      each val in ["one","two","three","four","five","six","sevent","eight","nine","ten"]
+        option 
+          = val
+    .city-current Москва
+  .servises-mobile-menu
+    select.style-select
+      each val in ["one","two","three","four","five","six","sevent","eight","nine","ten"]
+        option 
+          = val
+  .nav-mobile-menu-container
+    .nav-mobile-menu
+      nav
+        ul
+          each val,index in ["Товары", "Салоны","Производители", "Косметологи","Акции","Клиники","Новости"]
+            li 
+              a(href="#")
+                = val 
+    .nav-mobile-menu
+      nav
+        ul
+          each val,index in ["О нас", "Салонам и Клиникам","Частным специалистам", "Производителям","Клиентам"]
+            li 
+              a(href="#")
+                = val
+    .nav-mobile-menu
+      nav 
+        ul 
+          li 
+            a(href="#") Контакты

@@ -1,0 +1,25 @@
+doctype html
+html
+	body
+		// head start
+		include default/head.pug 
+		// head end
+ 
+		// header start
+		include default/header.pug
+		// header end
+		.basket-page
+			.stub
+			.page-404
+				img(src="../images/page-404.svg", alt="")
+				h2 Упс... Такой страницы не существует
+				h3 Бежим  в 
+					a(href="#") КАТАЛОГ
+		// footer stub
+		.footer-stub.green
+			.ragged-stub.black
+		// footer stub
+		
+		// footer start
+		include default/footer.pug
+		// footer end  

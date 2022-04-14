@@ -1,0 +1,53 @@
+.worker-detail-main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 30px;
+  margin: 0 0 30px;
+}
+
+.worker-detail-img {
+  grid-column: span 3;
+
+  img {
+    width: 100%;
+  }
+}
+
+.worker-detail-info {
+  grid-column: span 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h3 {
+    font-size: $largeSize;
+    margin: 0 0 15px;
+  }
+
+  h4 {
+    font-size: $mediumSize;
+    text-transform: uppercase;
+    font-family: "regular";
+  }
+
+  .info-container {
+    margin: auto 0;
+  }
+
+  .worker-detail-phone a {
+    font-size: $mediumSize;
+    color: $blackColor;
+    text-decoration: none;
+
+    &:hover {
+      color: $greenColor;
+    }
+  }
+}
+
+.worker-detail-description {
+  h3 {
+    font-size: $mediumSize;
+    margin: 0 0 15px;
+  }
+}

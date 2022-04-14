@@ -1,0 +1,86 @@
+//----------------------------------------------------------
+mixin content-roof-area(breadcrumbs)
+  .content-roof-area
+    .btn-group
+      a.back-btn(href="#")
+        i 
+        span Вернуться
+    .breadcrumbs
+      a(href="#")= breadcrumbs
+//----------------------------------------------------------
+mixin content-head(title, type)
+  .content-head.content-grid
+    h1= title
+    if type == "cabinet"
+      .btn-group 
+        a.btn(href="#") Профиль
+    if type == "salon"
+      .content-head-container
+        .btn-group 
+          a.btn(href="#") Метро, район
+        .salon-count
+          | Всего: 52
+    if type == "goods"
+      .content-head-container
+        .btn-group 
+          a.btn(href="#") Фильтр
+        .salon-count
+          | Всего: 52
+    if type == "stock"
+      .content-head-container
+        .btn-group 
+          a.btn.max-none(href="#") Салоны и производители
+        .salon-count
+          | Всего: 7
+    if type == "salon-detail"
+      .content-head-container
+        .btn-group 
+          a.btn(href="#") Оставить отзыв
+        .review-detail-count
+          span Рейтинг: 0
+          i
+    if type == "contacts-detail"
+      .content-head-container
+        .btn-group 
+          a.btn(href="#") Обратная связь
+//----------------------------------------------------------
+mixin sidebar-cabinet(massEl)
+  .content-sidebar-area
+    .cabinet-sidebar
+      h2 
+        span Управление
+        i
+      .cabinet-sidebar-container 
+        h3 Головной офис 
+        ul.ln
+          each val,index in massEl
+            li
+              a(href="#") 
+                span 
+                  = val
+                span
+                  |0
+                  = index + 1
+//----------------------------------------------------------
+mixin section-head(name, link)
+  .section-head
+    h2= name
+    .btn-container
+      a.list-all-item(href="#")
+        span= link
+        i
+//----------------------------------------------------------
+mixin category-search(placeholder, metro,...mass)
+  .category-search
+    .form.category-search-head
+      input(type="text", name="", placeholder="| Введите наименование станции метро или района")
+    .category-search-body
+      ul.ln
+        each val in mass
+          li
+            em
+            span= val
+            if metro == 1
+              i
+    .category-search-footer
+      a.btn.white-border(href="#") Применить 

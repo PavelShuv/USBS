@@ -1,0 +1,51 @@
+.content-grid.main-grid
+  +content-roof-area("Главная/ Регистрация")
+  .content-main-area
+    +content-head("Регистрация")
+    form.cabinet-body.form.authorization-form
+      .cabinet-line
+        .cabinet-num 01 
+        .cabinet-fill
+          h3 
+            em Ваша профильная деятельность
+          .cabinet-filed.checkbox-grid
+            each val in ["Производитель / Дистрибьютор","Салон","Косметолог","Физическое лицо","Клиника"]
+              label.checkbox.field-half
+                = val
+                input(type="checkbox")
+                span
+      .cabinet-line
+        .cabinet-num 02 
+        .cabinet-fill
+          h3 
+            em Информация
+          .cabinet-filed.checkbox-grid
+            input(type="text" placeholder="| Наименование компании")
+            input(type="text" placeholder="| Фамилия")
+            input.field-half(type="text" placeholder="| Имя")
+            input.field-half(type="text" placeholder="| Отчество")
+            input.field-half(type="text" placeholder="| +7 (___) ___ - __ - __")
+            input.field-half(type="text" placeholder="| Email")
+            input.input-file(type="file" data-multy="0" data-textchoise="Выберете файл..." data-hint="Загрузите фото лицензии/сертификата на продукцию (для фото - формат: .jpg, .png; размер - не более 500 кб)")
+            input(type="text" placeholder="| Введите ваш пригласительный код")
+            input.input-file(type="file" data-multy="1" data-textchoise="Выберете фотографию" data-hint="Загрузите фото лицензии/сертификата на продукцию (для фото - формат: .jpg, .png; размер - не более 500 кб)")
+      .cabinet-line
+        .cabinet-num 03
+        .cabinet-fill
+          h3 
+            em Придумайте пароль
+          .cabinet-filed.checkbox-grid
+            input(type="text" placeholder="| Придумайте пароль для входа на сайт *")
+            input(type="text" placeholder="| Подтвердите пароль для входа на сайт *")
+            label.checkbox.checkbox-micro
+              | Нажимая кнопку «Регистрация», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных
+              input(type="checkbox")
+              span
+            p Даю согласие на получение уведомлений в форме новостной рассылки об акциях и скидках от:
+            each val in ["Частных косметологов","Салонов / Клиник","Производителей / Дистрибьюторов"]
+              label.checkbox.field-half
+                = val
+                input(type="checkbox")
+                span
+          .btn-group
+            input.btn(type="submit" value="Регистрация")

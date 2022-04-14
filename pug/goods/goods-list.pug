@@ -1,0 +1,12 @@
+.main-grid
+	+content-roof-area("Главная/ Каталог")
+	.content-main-area
+		+content-head("Каталог", "goods")
+		+category-search("| Введите наименование станции метро или района",0,"Анестетики","Биоревитализанты","Биорепаранты","Ботулотоксины Иглы","канюли и шприцы","Карбокситерапия","Мезонити","Мезопрепараты","Пилинги")
+		include ../content-parts/filters-head.pug
+		.content-body.content-grid
+			- for (var x = 0; x < 1; x++)
+				+goods-item("../images/temp/salon-1.jpg")
+		
+		include ../content-parts/pagination.pug
+	include ../content-parts/sidebar.pug

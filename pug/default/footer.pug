@@ -1,0 +1,48 @@
+footer
+  .main-grid
+    .footer-info
+      .logo
+        a(href="./index.html")
+          img(src="../images/logo.svg")
+      .address 
+        |Москва, 105077 ул.
+        br
+        |Кузнецкий Мост, 11, стр. 1
+      .copyright 
+        |© 2021 ООО "JOODLE".
+        br
+        | Все права защищены.
+    .nav.nav-1 
+      nav
+        ul
+          each val in ["Каталог","Акции","О нас","Где купить","Контакты"]
+            li  
+              a(href="#") 
+                = val
+    .nav.nav-2 
+      nav
+        ul
+          each val in ["Как оформить заказ","Доставка и оплата","Гарантии и обмен","Корпоративные подарки","Стать партнером"]
+            li  
+              a(href="#") 
+                = val
+    .feedback-container
+      .feedback
+        div
+          a(href="#").phone + 7 (921) 789 - 65 - 31
+        div
+          a(href="#").mail joodle@info.ru
+      .links
+        a(href="#") Пользовательское соглашение
+        a(href="#") Политика конфиденциальности
+    .social-container
+      .social
+        a(href="#")
+          img(src="../images/social/f-blue.svg", alt="")
+        a(href="#")
+          img(src="../images/social/i-red.svg", alt="") 
+        a(href="#")
+          img(src="../images/social/v-blue.svg", alt="") 
+      .create
+        a(href="#") 
+          |Создание сайта Style You

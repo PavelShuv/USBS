@@ -1,0 +1,24 @@
+.content-grid.main-grid
+	+content-roof-area("Главная")
+	.content-main-area
+		+content-head("Авторизация")
+		.cabinet-body
+			.cabinet-line
+				.cabinet-num 01
+				.cabinet-fill
+					h3
+						em Введите ваш логин и пароль
+						span *
+					.cabinet-filed
+						form.form.authorization-form
+							input(type="text" placeholder="| Номер телефона или Email")
+							input(type="text" placeholder="| Пароль")
+							label.checkbox
+								| Запомнить меня на этом компьютере
+								input(type="checkbox")
+								span
+							.btn-group
+								input.btn(type="submit" value="Войти") 
+								a.btn(href="#") Забыли пароль ?
+		// worker-detail-page end
+		.content-sidebar-area

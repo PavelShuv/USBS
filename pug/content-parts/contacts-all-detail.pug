@@ -1,0 +1,48 @@
+.main-grid
+	+content-roof-area("Главная/ Каталог")
+	.content-main-area
+		+content-head("Контакты салон", "contacts-detail")
+		.content-body.content-grid
+			.contacts-detail
+				.contacts-item 
+					.contacts-line
+						b Тел.:
+						span 
+							a(href="#") +7(926)104-24-42 
+					.contacts-line
+						b Email:
+						span 
+							a(href="#") blackhoneymsk@gmail.com
+				.contacts-item 
+					.contacts-line
+						b Сайт:
+						span 
+							a(href="#") +7(926)104-24-42 
+					.contacts-line
+						b Соц. сети
+						span 
+							a.i(href="#")
+							a.f(href="#")
+							a.vk(href="#")
+				.contacts-item 
+					.contacts-line
+						b Адрес:
+						span 
+							a(href="#")  улица Нижняя Масловка, 3, Москва, Россия
+					.contacts-line
+						b Метро:
+						span Савёловская
+							i
+					.contacts-line
+						b Пн - Пт:
+						span 10.00 - 22.00
+					.contacts-line
+						b Суббота:
+						span 10.00 - 22.00
+					.contacts-line
+						b Воскресенье:
+						span 10.00 - 22.00
+
+
+
+	include ../content-parts/sidebar.pug

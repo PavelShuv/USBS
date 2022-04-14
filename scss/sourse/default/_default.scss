@@ -1,0 +1,183 @@
+* {
+	box-sizing: border-box;
+}
+
+
+
+body,
+html {
+	font-family: "regular";
+	color: $grayColor;
+	font-size: $standartSize;
+	min-width: 320px;
+	min-height: 640px;
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+
+a {
+	color: inherit;
+	display: inline-block;
+
+	&:hover {}
+}
+
+.ln,
+.ln li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.custom-disk {
+	li {
+		padding-left: 15px;
+		position: relative;
+
+		&:before {
+			content: "";
+			@include positionElement(4px, 4px, 0, 8px);
+			background: $blackColor;
+			border-radius: 100%;
+		}
+	}
+}
+
+.flex-align {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-cover {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+
+	img {
+		visibility: hidden;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	font-family: "bold";
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	color: $blackColor;
+}
+
+b,
+strong {
+	font-weight: normal;
+	font-family: "semibold";
+}
+
+h1 {
+	@include changeFontSize($mediaLargeSize);
+}
+
+h2 {}
+
+$gridCount: 12;
+
+.main-grid {
+	display: grid;
+	grid-template-columns: repeat($gridCount, 1fr);
+	grid-column-gap: 15px;
+	padding: 0 30px;
+}
+
+.social {
+	display: inline-block;
+	vertical-align: middle;
+
+	a {
+		display: inline-block;
+		margin: 0 0 0 15px;
+
+		img {
+			object-fit: cover;
+			width: 30px;
+			height: 30px;
+		}
+	}
+}
+
+/*item-grade / товары / акции / салоны / косметологи*/
+
+.item-grade {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 15px;
+	color: $blackColor;
+}
+
+.stars-container {
+	i {
+		@include icoEl(12px, 12px, "../images/icons/star-gray.svg");
+		margin: 0 2px;
+	}
+}
+
+/*item-grade*/
+
+/*item-type*/
+
+
+.type-item {
+	&:hover {
+		.type-offer {
+			span {
+				left: 0;
+			}
+		}
+	}
+}
+
+.type-offer {
+	position: absolute;
+	right: 0;
+	top: 0;
+	overflow: hidden;
+
+	span {
+		display: block;
+		left: 100%;
+		position: relative;
+		padding: 5px 10px;
+		color: $whiteColor;
+		background-color: $blueColor;
+		transition: ease-out 0.25s;
+	}
+
+	em {
+		@include positionElement(0, 0, 0, 0, right);
+		border-style: solid;
+		border-width: 14px;
+		border-color: $blueColor $blueColor transparent transparent;
+	}
+}
+
+/*item-type*/

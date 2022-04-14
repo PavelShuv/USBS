@@ -1,0 +1,17 @@
+head
+	meta(
+		charset="UTF-8"
+	)
+	meta(
+		name="viewport"
+		content="width=device-width, initial-scale=1.0"
+	)
+
+	each val in ["../css/owl.carousel.css","../css/style.css","../css/response.css",]
+		link(href = val	type="text/css"	rel="stylesheet")
+
+	each val in ["../js/jquery-3.3.1.min.js","../js/slider.js","../js/jquery.mask.js","../js/owl.carousel.js","../js/control-style.js","../js/common.js"]
+		script(	src = val)
+
+
+	include add-all-template.pug

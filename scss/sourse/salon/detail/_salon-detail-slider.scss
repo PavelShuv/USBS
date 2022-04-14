@@ -1,0 +1,78 @@
+.salon-slider {
+  margin: 0 0 150px;
+
+  h2 {
+    border-top: 1px solid;
+    padding: 15px 0;
+    font-size: $largeSize;
+  }
+}
+
+.salon-slider-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  img {
+    width: 100%;
+  }
+
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.salon-slider-item {
+  @include positionElement(100%, 100%, 0, 0);
+}
+
+$sizeDots: 15px;
+
+.salon-slider-dots {
+  @include positionElement(50%, auto, 0, 0, right, bottom);
+  text-align: right;
+
+  span {
+    cursor: pointer;
+    margin: 7px;
+    display: inline-block;
+    width: $sizeDots;
+    height: $sizeDots;
+    border: 1px solid $whiteColor;
+    border-radius: 100%;
+
+    &:hover {
+      background-color: $whiteColor;
+    }
+  }
+}
+
+.salon-slider-content {
+  grid-column: span 9;
+  position: relative;
+}
+
+.salon-slider-thumbnails {
+  grid-column: span 3;
+  position: relative;
+  display: flex;
+  background-color: $grayColor;
+
+  .img-cover {
+    position: absolute;
+    opacity: 0.6;
+    transition: ease-out 0.25s;
+    cursor: pointer;
+  }
+
+  &:hover .img-cover {
+    opacity: 0.8;
+  }
+}
+
+.salon-slider-count {
+  position: relative;
+  margin: auto;
+  color: $whiteColor;
+  font-size: $largeSize;
+  font-family: "bold";
+}

@@ -1,0 +1,58 @@
+
+// mobile-menu
+include mobile-menu.pug
+// mobile-menu
+
+// popup-form
+include popup-form.pug
+// popup-form 
+
+header.header-black
+  .main-grid.first-line
+    .hamburger-container.vertical-align 
+      a(href="#").hamburger-btn
+    .logo-container.vertical-align 
+      a.logo(href="#") 
+        img(src="../images/logo.svg", alt="")
+    .sigin-container.vertical-align 
+      .sigin-body
+        a(href="#") Войти
+        span /
+        a(href="#") Регистрация
+        //- a(href="#") 
+        //-   i.img-cover 
+        //-     img(src="../images/temp/1.jpg", alt="")
+        //- //-   em Медведев Евгений
+        //- span /
+        //- a(href="#") Выйти
+
+    .city-container.vertical-align 
+      .city-body
+        em Ваш Город: 
+        a(href="#")  Москва
+    .controls-container.vertical-align
+      .controls-body
+        form.form(action="") 
+          input.search-field(type="text" placeholder="| Введите поисковой запрос ...")
+        .loop-btn
+        .basket-btn
+    hr
+  .main-grid.second-line
+    nav.nav.nav-1
+      ul
+        each val in ["Товары","Услуги"]
+          li
+            a(href="#")
+              = val
+    nav.nav.nav-2
+      ul
+        each val in ["Салоны","Производители","Косметологи", "Акции", "Клиники"]
+          li
+            a(href="#")
+              = val
+    nav.nav.nav-3
+      ul
+        each val in ["Новости","Контакты"]
+          li
+            a(href="#")
+              = val

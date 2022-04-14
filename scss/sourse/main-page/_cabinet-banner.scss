@@ -1,0 +1,42 @@
+.cabinet-banner {
+  font-size: $mediumSize;
+  position: relative;
+  height: 330px;
+  padding-top: 30px;
+
+  .img-cover {
+    position: absolute;
+    top: 0;
+  }
+
+  .cabinet-banner-head {
+    display: flex;
+    justify-content: space-between;
+    grid-column: span 12;
+  }
+
+  .main-grid {
+    position: relative;
+  }
+
+  h2,
+  h3 {
+    font-size: $largeSize;
+    margin: 0 0 30px;
+  }
+
+
+  .banner-text {
+    grid-column: span 6;
+  }
+
+  .btn-container {
+    margin: 30px 0 0;
+  }
+
+  .btn {
+    font-size: $standartSize;
+    max-width: none;
+    width: auto;
+  }
+}

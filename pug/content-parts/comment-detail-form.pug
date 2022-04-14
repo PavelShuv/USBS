@@ -1,0 +1,15 @@
+.comment-detail-form
+	.comment-data 30.09.2021
+	.comment-detail-container
+		h2 Ваш отзыв о Салоне:
+		.comment-form-grade
+			b 0 отзывов:
+			.comment-stars-container
+				- for (var x = 0; x < 5; x++)
+					i
+		form.form
+			textarea(name="#", , rows="4", placeholder="| Напишите, что вы думаете о салоне ...") 
+			.btn-container 
+				input.btn.white-border(type="submit" value="Оправить") 
+	.comment-form-img
+		img(src="../images/temp/salon-1.jpg", alt="")

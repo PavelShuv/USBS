@@ -1,0 +1,45 @@
+doctype html
+html
+	// head
+	include default/head.pug 
+	// head
+	body
+		.index
+
+		// header 
+		include default/header.pug
+		.stub
+		// header
+
+		// main-page start
+
+		// section-1 poster start
+		//include main-page/poster.pug
+		// section-1 poster end 
+
+		// section-2 cabinet-thumnails
+		include main-page/cabinet-thumbnails.pug
+		// section-2 cabinet-thumnails
+
+		// section-3 goods start
+		//include main-page/goods.pug
+		// section-3 goods end
+		
+		// section-4 stock start
+		//include main-page/stock.pug
+		// section-4 stock end
+		
+		// section-5 salon start
+		//include main-page/salon.pug
+		// section-5 salon end
+
+		// section-6 cosmetologist start
+		//include main-page/cosmetologist.pug
+		// section-6 cosmetologist end
+
+		+banner-cabinet("../images/temp/banner-2.jpg","Вы частный косметолог?","Косметологам","Получите работающий канал для привлечения потенциальных клиентов: подробное описание продуктов, отзывы покупателей, акционные механизмы на портале и переписка с клиентами.","Разместить свой профайл на портале")
+		// main-page end
+
+		// footer
+
+		// footer

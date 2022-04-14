@@ -1,0 +1,44 @@
+doctype html
+html
+	body
+		.index
+		// head
+		include default/head.pug 
+		// head
+
+		// header 
+		include default/header.pug
+		.stub
+		// header
+
+		// worker-page start
+
+		.content-grid.main-grid
+			.content-head-area
+				.btn-group
+					a.back-btn(href="#")
+						i 
+						span Вернуться
+				.breadcrumbs
+					a(href="#") Главная
+			.content-body-area
+				.cabinet-head
+					h1 Сотрудники
+				.worker-detail
+					.worker-detail-main
+						.worker-detail-img
+							img(src="../images/temp/worker.jpg", alt="")
+						.worker-detail-info
+							.info-container
+								h3 Ирина Азымова
+								h4 барбер, парикмахер
+							.worker-detail-phone
+								a(href="#") +7-(495)150-55-55 
+					.worker-detail-description
+						h3 Описание о Сотруднике
+						p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime impedit cupiditate at? Laborum, adipisci nobis. Et sequi dolores quia, ratione quibusdam harum consequuntur beatae necessitatibus veniam alias temporibus. Eos, harum!
+		// worker-page end
+
+				// footer
+
+				// footer 

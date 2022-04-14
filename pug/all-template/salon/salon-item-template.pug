@@ -1,0 +1,18 @@
+mixin salon-item(img, title, description, addres, offer )
+  .salon-item.type-item
+    h3 
+      = title
+    .item-grade
+      b 1 отзывов
+      .stars-container 
+        - for (var x = 0; x < 5; x++)
+          i
+    .salon-item-description 
+      = description
+    .salon-address
+      = addres
+    .salon-list-img
+      img(src=img, alt="")
+      .type-offer
+        em
+        span Новинка

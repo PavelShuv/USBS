@@ -1,0 +1,66 @@
+.comment-detail-item {
+  border-top: 1px solid $blackColor;
+  padding: 15px 0 0;
+  margin: 0 0 30px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 15px;
+
+  .comment-data,
+  .comment-detail-name,
+  .comment-detail-range {
+    font-size: $standartSizePlusPlus;
+    line-height: 1;
+    color: $blackColor;
+  }
+
+  .comment-detail-name {
+    font-family: "bold";
+    display: inline-block;
+    margin: 0 30px;
+  }
+
+  .comment-data {
+    color: $grayColor;
+    display: inline-block;
+    font-size: $standartSizePlus;
+
+  }
+
+  .comment-detail-content {
+    grid-column: span 8;
+  }
+}
+
+.comment-detail-head {
+  margin: 0 0 30px;
+}
+
+.comment-detail-range {
+  font-family: "bold";
+  display: inline-block;
+}
+
+.comment-detail-text {
+  font-size: $standartSizePlusPlus;
+}
+
+.comment-detail-avatar {
+  text-align: right;
+  grid-column: span 3;
+
+  .avatar-img {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+
+  }
+}
+
+.range-up {
+  @include icoEl(16px, 16px, "../images/icons/range-down.svg");
+  margin-right: 15px;
+}

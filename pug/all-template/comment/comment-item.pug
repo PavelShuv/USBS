@@ -1,0 +1,14 @@
+mixin comment-detail-item(data,name,range,text,avatar)
+  .comment-detail-item
+    .comment-detail-content 
+      .comment-detail-head
+        .comment-detail-range
+          i.range-up
+          span= range
+        .comment-detail-name= name
+        .comment-data= data
+      .comment-detail-text
+        = text
+    .comment-detail-avatar
+      .avatar-img
+        img(src=avatar, alt="")

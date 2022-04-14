@@ -1,0 +1,11 @@
+.main-grid
+	+content-roof-area("Главная/ Акции")
+	.content-main-area
+		+content-head("Акции", "stock") 
+		+category-search("| Введите наименование салона или производителя",0,"Центр красоты и здоровья Модильяни","Центр красоты и здоровья Модильяни")
+		include ../content-parts/filters-head.pug
+		.content-body.content-grid
+			- for (var x = 0; x < 1; x++)
+				+stock-item("../images/temp/stock-1.jpg","Салон красоты Egoist&Ka","20 % Скидка на первое посещение","до 30 сентябрь 2021","Островитянова,19/22")
+		include ../content-parts/pagination.pug 
+	include ../content-parts/sidebar.pug

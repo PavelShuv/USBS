@@ -1,0 +1,34 @@
+section.goods-main 
+  h2 Бьюти товары
+  .goods-container.main-grid 
+    .goods-item.list-item
+      .goods-list-img
+        img(src="../images/temp/goods.png", alt="")
+        .goods-list-offer
+          em
+          span Новинка
+      .item-grade
+        b 0 отзывов
+        .stars-container 
+          - for (var x = 0; x < 5; x++)
+            i
+      h3 Moisturizing serum/ увлажняющая сыворотка
+      a.goods-list-check.btn(href="#") Узнать цену
+      .goods-list-price
+        b 1880.00 р.
+      .goods-buy
+        .goods-controls.flex-align
+          .goods-plus
+          .goods-current 5
+          .goods-minus
+        a.btn(href="#") Купить
+      .goods-list-info
+        .info-line 
+          span Бренд:
+          span ANGIOPHARM 
+        .info-line 
+          span Бренд:
+          span ANGIOPHARM 
+        .info-line 
+          span Бренд:
+          span ANGIOPHARM 

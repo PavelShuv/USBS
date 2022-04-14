@@ -1,0 +1,19 @@
+.popup-container.element-show(data-showEl="1")
+  .popup-bg
+  .flex-container
+    .popup
+      .close
+      h2 Форма
+        br
+        |заказа
+      form.form
+        input(type="text" placeholder="ФИО")
+        input.phone-mask(type="text" placeholder="+7 (___) ___ - __ - __")
+        input(type="text" placeholder="Email")
+        textarea(type="text" placeholder="Сообщение")
+        .checkbox-container
+          .checkbox
+            label Я даю свое согласие на обработку персональных данных
+              input(type="checkbox" checked)
+              span
+        input.btn.blue(type="submit")

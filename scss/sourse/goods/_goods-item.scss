@@ -1,0 +1,82 @@
+.goods-item {
+  grid-column: span 2;
+
+  border: 1px solid $greenColor;
+  padding: 15px;
+
+  h3 {
+    font-size: inherit;
+    margin: 0 0 30px;
+  }
+
+
+  .goods-buy {
+    margin: 0 -15px 30px;
+  }
+}
+
+.goods-list-img {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+}
+
+
+.goods-list-check {
+  max-width: none;
+  border-radius: 0;
+  color: $whiteColor;
+}
+
+.goods-list-price {
+  font-size: $mediumSize;
+  color: $blackColor;
+  padding: 15px 0;
+}
+
+.goods-buy {
+  background-color: $grayColorSecond;
+  display: flex;
+  justify-content: space-between;
+
+
+  .goods-controls {
+    justify-content: space-between;
+    padding: 5px 15px;
+  }
+
+  .goods-plus {
+    @include icoEl(30px, 30px, "../images/controls/plus.svg");
+  }
+
+  .goods-minus {
+    @include icoEl(30px, 30px, "../images/controls/minus.svg");
+  }
+
+  .goods-controls,
+  .btn {
+    width: 50%;
+  }
+
+  .btn {
+    border-radius: 0;
+    border: 0;
+    color: $whiteColor;
+    background-color: $greenColor;
+  }
+}
+
+.goods-list-info {
+  border-top: 1px solid $greenColor;
+  margin: 0 -15px;
+  padding: 5px 15px 0;
+
+  .info-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-size: $smallSize;
+  }
+}

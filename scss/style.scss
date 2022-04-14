@@ -1,0 +1,168 @@
+@import "sourse/default/scss-include/_fontSize";
+@import "sourse/default/scss-include/_colors";
+@import "sourse/default/scss-include/_mixins";
+
+/*-----fonts-----*/
+
+@import "sourse/default/_fonts.scss";
+
+/*-----fonts-----*/
+
+/*-----defaul-----*/
+
+@import "sourse/default/_default.scss";
+
+/*-----defaul-----*/
+
+
+/*-----btns-----*/
+
+@import "sourse/default/_btns.scss";
+
+/*-----btns-----*/
+
+/*-----forms-----*/
+
+@import "sourse/default/_forms.scss";
+
+/*-----forms-----*/
+
+/*-----popup-form-----*/
+
+@import "sourse/default/_popup-form.scss";
+
+/*-----popup-form-----*/
+
+/*-----header-----*/
+
+@import "sourse/default/_header.scss";
+
+/*-----header-----*/
+
+/*-----footer-----*/
+
+@import "sourse/default/_footer.scss";
+
+/*-----footer-----*/
+
+/*-----mobile-menu-----*/
+
+@import "sourse/default/_mobile-menu.scss";
+
+/*-----mobile-menu-----*/
+
+/*-----slider-owl-----*/
+
+@import "sourse/default/_slider-owl.scss";
+
+/*-----slider-owl-----*/
+
+
+/*-----map-----*/
+
+@import "sourse/default/_map.scss";
+
+/*-----map-----*/
+
+/*--------------------main-page-start----*/
+
+/*--section-1-poster-start*/
+@import "sourse/main-page/_poster.scss";
+/*--section-1-poster-end*/
+
+/*--section-2-cabinet-thumbnails-start*/
+@import "sourse/main-page/_cabinet-thumbnails.scss";
+/*--section-2-cabinet-thumbnails-end*/
+
+
+
+/*--section-4-stock-start*/
+@import "sourse/main-page/_stock.scss";
+/*--section-4-stock-end*/
+
+
+/*--section-6-cosmetologist-start*/
+@import "sourse/main-page/_cosmetologist.scss";
+/*--section-6-cosmetologist-end*/
+
+/*--cabinet-banner-start*/
+@import "sourse/main-page/_cabinet-banner.scss";
+/*--cabinet-banner-start*/
+
+
+/*--------------------main-page-end----*/
+
+/*-----content-parts start-----*/
+
+/*global-content start-----*/
+@import "sourse/content-parts/_global-content.scss";
+/*global-content end-----*/
+
+/*filter-head start-----*/
+@import "sourse/content-parts/_filter-head.scss";
+/*filter-head end-----*/
+
+/*category-search start-----*/
+@import "sourse/content-parts/_category-search.scss";
+/*category-search end-----*/
+
+
+/*comment-all-start-----*/
+@import "sourse/content-parts/_comment-all.scss";
+/*comment-all end-----*/
+
+/*comment-detail-form start-----*/
+@import "sourse/content-parts/_comment-detail-form.scss";
+/*comment-detail-form end-----*/
+
+/*-----content-parts end-----*/
+
+/*--------------------cabinet-page-start----*/
+@import "sourse/cabinet-page/_cabinet.scss";
+/*--------------------cabinet-page-end----*/
+
+/*--------------------worker-start----*/
+@import "sourse/worker/_worker-detail.scss";
+/*--------------------worker-end----*/
+
+
+
+/*--------------------salon-start----*/
+
+/*----------salon-list-start*/
+
+/*----salon-list----start*/
+@import "sourse/salon/_salon-item.scss";
+/*----salon-list----end*/
+
+/*----------salon-end-start*/
+/*----------salon-detail-start*/
+
+/*----salon-detail-main-start*/
+@import "sourse/salon/detail/_salon-detail-main.scss";
+/*----salon-detail-main-start*/
+
+/*----salon-detail-slider-start*/
+@import "sourse/salon/detail/_salon-detail-slider.scss";
+/*----salon-detail-slider-start*/
+
+/*----------salon-detail-end*/
+/*--------------------salon-end----*/
+
+
+/*--------------------goods-start----*/
+
+/*----goods-list----start*/
+@import "sourse/goods/_goods-item.scss";
+/*----goods-list----end*/
+
+/*----goods-tabs----start*/
+@import "sourse/goods/detail/_goods-tabs.scss";
+/*----goods-tabs----end*/
+
+/*----goods-detail----start*/
+@import "sourse/goods/detail/_goods-detail.scss";
+/*----goods-detail----end*/
+
+
+/*--------------------goods-start----*/

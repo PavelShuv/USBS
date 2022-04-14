@@ -1,0 +1,49 @@
+@import "sourse/default/scss-include/_fontSize";
+@import "sourse/default/scss-include/_colors";
+
+/*-----1680-----*/
+@media screen and (max-width: 1680px) {
+	@import "sourse/response/_mw1680.scss";
+}
+
+/*-----1680-----*/
+
+/*-----1440-----*/
+@media screen and (max-width: 1440px) {
+	@import "sourse/response/_mw1440.scss";
+}
+
+/*-----1440-----*/
+
+/*-----1280-----*/
+
+@media screen and (max-width: 1280px) {
+	@import "sourse/response/_mw1280.scss";
+}
+
+/*-----1280-----*/
+
+/*-----1024-----*/
+@media screen and (max-width: 1024px) {
+	@import "sourse/response/_mw1024.scss";
+}
+
+/*-----1024-----*/
+
+/*-----768-----*/
+
+@media screen and (max-width: 768px) {
+	@import "sourse/response/_mw768.scss";
+}
+
+
+/*-----768-----*/
+
+/*-----414-----*/
+
+@media screen and (max-width: 414px) {
+	@import "sourse/response/_mw414.scss";
+}
+
+
+/*-----414-----*/

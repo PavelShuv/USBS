@@ -1,0 +1,18 @@
+mixin stock-item(img, salonname, title, toend, address )
+  .stock-item.list-item.type-item
+    h3= salonname 
+    .item-grade
+      b 0 отзывов
+      .stars-container 
+        - for (var x = 0; x < 5; x++)
+          i
+    a.stock-topic(href="#")= title
+    .stock-left
+      span До окончания осталось:
+      b= toend
+    .stock-address= address
+    .stock-list-img
+      img(src=img, alt="")
+      .type-offer
+        em
+        span Новинка

@@ -1,0 +1,115 @@
+.hamburger {
+  @include bgImageEl("../images/controls/menu.svg");
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: auto;
+}
+
+
+.mobile-menu {
+  @include positionElement(100%, 100%, 0, 0, left, top, 5, none, fixed);
+  background-color: $blackColor;
+  color: $whiteColor;
+  padding: 15px;
+
+  &.show {
+    display: block;
+  }
+
+  ul,
+  li {
+    display: block;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    font-size: $standartSize;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+
+  .close {
+    @include positionElement(15px, 15px, 0, 0);
+    @include bgImageEl("../images/controls/close-white.svg");
+    background-color: $blackColor;
+    margin: 25px 15px;
+    cursor: pointer;
+  }
+
+
+  .custom-select {
+    i {
+      background-image: url("../images/controls/arrow-down-mini-white.svg");
+    }
+  }
+}
+
+.header-mobile-menu {
+  height: 50px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.controls-mobile-menu {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 15px;
+  margin: 0px 0 15px;
+
+  .controls-cell {
+    grid-column: span 3;
+    padding-top: 5px;
+    border-top: 1px solid $whiteColor;
+  }
+
+
+}
+
+.logged-status {
+
+  .logged-mobile-menu,
+  .logout-mobile-menu {
+    display: none;
+  }
+
+}
+
+.not_logged-status {}
+
+.city-mobile-menu {
+  padding-top: 5px;
+  border-top: 1px solid $whiteColor;
+  margin: 0px 0 30px;
+
+  .city-current {
+    margin-top: 10px;
+  }
+}
+
+.servises-mobile-menu {
+  padding-top: 5px;
+  border-top: 1px solid $whiteColor;
+  margin: 0px 0 30px;
+}
+
+.nav-mobile-menu-container {
+  padding-top: 5px;
+  border-top: 1px solid $whiteColor;
+}
+
+.nav-mobile-menu {
+  margin: 0 0 30px;
+
+  li {
+    margin: 0 0 5px;
+  }
+}

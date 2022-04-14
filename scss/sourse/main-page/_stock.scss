@@ -1,0 +1,45 @@
+.stock-item {
+  grid-column: span 2;
+
+  border-top: 1px solid;
+  padding-top: 15px;
+
+  h3 {
+    font-size: inherit;
+    margin: 0 0 30px;
+  }
+}
+
+.stock-topic {
+  color: $greenColor;
+  font-family: "bold";
+  font-size: $standartSizePlus;
+  text-decoration: none;
+  margin: 0 0 15px;
+}
+
+.stock-left {
+  margin: 0 0 15px;
+
+  span {
+    display: block;
+  }
+
+  b {
+    color: $greenColor;
+    font-family: "bold";
+    font-size: $standartSizePlus;
+  }
+}
+
+.stock-address {
+  margin: 0 0 15px;
+}
+
+.stock-list-img {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+}
